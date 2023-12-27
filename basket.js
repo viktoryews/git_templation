@@ -9,7 +9,10 @@ async function productData() {
         data.forEach(({ photo, product_name, product_description, product_price }) => {
             const productCard = `
             <div class="card">
-             <img class="product_img" src="${photo}" alt="${product_name}">
+             <div class="container_image">
+              <img class="product_img" src="${photo}" alt="${product_name}">
+              <img class="overlay" src="img/Add\ to\ cart\ \(1\).png" />
+             </div>
              <h2 class="product_name">${product_name}</h2>
              <p class="product_description">${product_description}</p>
              <p class="product_price">$${product_price}</p>

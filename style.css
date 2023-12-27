@@ -60,20 +60,21 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
-.product_img::before {
+.product_img {
     width: 360px;
     height: 420px;
     top: 106px;
     left: 230px;
     box-shadow: #5D5D5D;
+    background-repeat: no-repeat;
 }
 
-.product_img::after {
-    background-image: url(img/Add\ to\ cart\ \(1\).png);
-}
-
-.product_img:hover {
+.container_image:hover {
     filter: brightness(50%);
+}
+
+.container_image:hover > .overlay {
+    visibility: visible;
 }
 
 .product_name {
@@ -127,4 +128,18 @@ html {
     cursor: pointer;
     position: relative;
     margin-top: 150px;
+}
+
+.container_image {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    visibility: hidden;
 }
