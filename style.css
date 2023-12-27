@@ -60,12 +60,20 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
-.product_img {
+.product_img::before {
     width: 360px;
     height: 420px;
     top: 106px;
     left: 230px;
     box-shadow: #5D5D5D;
+}
+
+.product_img::after {
+    background-image: url(img/Add\ to\ cart\ \(1\).png);
+}
+
+.product_img:hover {
+    filter: brightness(50%);
 }
 
 .product_name {
@@ -118,5 +126,5 @@ html {
     color: white;
     cursor: pointer;
     position: relative;
-   margin-top: 150px;
+    margin-top: 150px;
 }
