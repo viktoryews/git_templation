@@ -1,87 +1,115 @@
 .card {
     width: 360px;
-    height: 420x;
-    top: 1576px;
+    height: 581px;
+    top: 107px;
     left: 230px;
-   position: absolute;
+    background-image: url(img/Background\ \(1\).png);
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 .container {
+    grid-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+}
+
+.content {
     width: 1140px;
     height: 1395px;
-    top: 1470px;
+    top: 0px;
     left: 230px;
-    margin: 0 auto;
+    position: relative;
 }
 
 .header_container {
     width: 186px;
     height: 36px;
     left: 710.36px;
-    top: 1470px;
+    top: 0px;
     font-size: 30px;
     font-weight: 400;
-    margin-bottom: 6px;
+    margin: 6px;
     flex-shrink: 0;
     position: absolute;
+    font-family: 'Lato', sans-serif;
 }
 
 .paragraph_container {
     width: 340px;
     height: 17px;
-    top: 1512px;
+    top: 42px;
     left: 631px;
     font-size: 14px;
     font-weight: 400;
     color: #9F9F9F;
-    margin-bottom: 13px;
+    margin-bottom: 48px;
     position: absolute;
-}
-
-.product_name {
-    width: 148.11px;
-    height: 16px;
-    top: 2021.35px;
-    left: 248px;
-    font-size: 13px;
-    font-weight: 400;
-    margin-bottom: 12.65px;
+    font-family: 'Lato', sans-serif;
 }
 
 .product_img {
     width: 360px;
     height: 420px;
-    top: 1576px;
+    top: 106px;
     left: 230px;
-    
+    box-shadow: #5D5D5D;
+}
+
+.product_name {
+    width: 153.11px;
+    height: 16px;
+    top: 1662.35px;
+    left: 248px;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 12.65px;
+    margin-top: 25.35px;
+    margin-left: 18px;
+    line-height: 15.6px;
 }
 
 .product_description {
-    width: 314.74px;
+    width: 316.74px;
     height: 51px;
-    top: 2021.35px;
+    top: 1191px;
     left: 246.46px;
     font-weight: 300;
     font-size: 14px;
     color: #5D5D5D;
-   
+    margin-bottom: 18px;
+    margin-left: 16.46px;
+    line-height: 16.8px;
 }
 
 .product_price {
     width: 52.46px;
     height: 19px;
-    top: 2119px;
+    top: 1260px;
     left: 248.41px;
     font-weight: 400;
     font-size: 16px;
     color: #F16D7F;
-   
+    margin-left: 18.41px;
+    margin-bottom: 20px;
+    line-height: 19.2px;
 }
 
 .button_container {
     width: 212px;
     height: 48px;
-    top: 2817px;
     left: 695px;
     border: 1px;
     flex-shrink: 0;
@@ -89,5 +117,6 @@
     background-image: url(img/Rectangle\ 5\ \(1\).svg);
     color: white;
     cursor: pointer;
-   position: absolute;
+    position: relative;
+   margin-top: 150px;
 }
