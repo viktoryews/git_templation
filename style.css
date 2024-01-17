@@ -26,10 +26,26 @@ html {
     position: relative;
 }
 
+.cartWrap {
+    grid-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+}
+
 .content {
     width: 1140px;
     height: 1395px;
     top: 0px;
+    left: 230px;
+    position: relative;
+}
+
+.cartContainer {
+    width: 1140px;
+    height: 1395px;
+    top: 50px;
     left: 230px;
     position: relative;
 }
@@ -71,6 +87,7 @@ html {
 
 .container_image:hover {
     filter: brightness(50%);
+    cursor: pointer;
 }
 
 .container_image:hover > .overlay {
@@ -143,3 +160,18 @@ html {
     z-index: 10000;
     visibility: hidden;
 }
+
+button.btn {
+    position: absolute;;
+    width: 25px;
+    height: 25px;
+    border: none;
+    right: 22px;
+    top: 50px;
+    background-image:  url("../img/Vector.svg");
+    background-position: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+
