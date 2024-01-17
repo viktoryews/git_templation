@@ -61,6 +61,8 @@ function onchangebasket() {
     `
             containerBox.insertAdjacentHTML("beforeend", productCard);
         });
+
+        document.querySelector('.cartWrap').innerHTML === ""? document.querySelector('.header').style.visibility = "hidden" : document.querySelector('.header').style.visibility = "visible";
     } catch (error) {
         console.error(error);
     }

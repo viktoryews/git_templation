@@ -63,6 +63,19 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+.header {
+    width: 186px;
+    height: 36px;
+    left: 710.36px;
+    top: 0px;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 6px;
+    flex-shrink: 0;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+}
+
 .paragraph_container {
     width: 340px;
     height: 17px;
